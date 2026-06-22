@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: font-family: "Trebuchet MS", sans-serif;
+        }
+
+        body{
+            background: #7861ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            width: 350px;
+            background: rgba(255, 255, 255, 0.753);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 38px 70px rgba(255, 255, 255, 0.15);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2b2828;
+        }
+
+        .form-group{
+            margin-bottom: 18px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"]{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        input:focus{
+            outline: none;
+            border-color: #04ff00;
+        }
+
+        .checkbox{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #0ba100;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login Form</h2>
+
+        <form action="/login" method="POST">
+
+           <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter your email">
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="show">
+                    <label for="show">Remember Me</label>
+                </div>
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
