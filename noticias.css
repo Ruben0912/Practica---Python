@@ -1,0 +1,78 @@
+body{
+    background-color: rgba(179, 179, 179, 0.479);
+}
+header {
+    color: white;
+    border-style: solid;
+     text-align: center;
+     background-color: black;
+    padding: 10px;
+    border-radius: 2px;
+    border-color: black;
+}
+nav{
+    border-style: solid;
+    background-color: grey;
+    color: white;
+     padding: 10px;
+     text-align: center;
+     border-color: grey;
+ }
+ nav a{
+    color: white;
+ }
+ article{
+    border-color: grey;
+    background-color: whitesmoke;
+    border-style: solid;
+     text-align: center;
+    padding: 52px;
+    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 1px;
+    width: 69%;
+    margin-top: 12px;
+}
+section{
+    border-color: grey;
+    background-color: whitesmoke;
+    border-style: solid;
+     text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 1px;
+    width: 50%;
+}
+aside{
+    border-color: grey;
+    background-color: whitesmoke;
+    border-style: solid;
+     text-align: left;
+    padding: 18px;
+    margin-bottom: 5px;
+    margin: 10px;
+    display: inline-block;
+    float: right;
+    width: 20%;
+    border-radius: 5px;
+}
+.news-container1{
+    width: 76%;
+    display: flex;
+    margin-left: 0px;
+}
+
+.news-container2{
+    width: 76%;
+    display: flex;
+    margin-bottom: 8px;
+}
+footer{
+    border-style: solid;
+    background-color: black;
+    color: white;
+     padding: 10px;
+     text-align: center;
+     border-color: black;
+}

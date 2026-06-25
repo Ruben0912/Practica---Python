@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+    <h1> Rubén Bolívar Martín</h1>
+    <button onclick="ruben()">Click to know me</button>
+    <p id="message"></p>   
+    <button onclick="darkwhite()">Darkmode</button>
+   <section>
+    <h2> Contact form</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="submitform()">Click</button>
+
+    
+    </header>
+    <nav>
+        <a href="#"> home</a>
+        <a href="#"> About</a>
+        <a href="#"> Proyect</a>
+        <a href="#"> Contact</a>
+    </nav>
+         <aside>
+            <h3> Skills</h3>
+            <p> - HTML</p>
+            <p> - CSS</p>
+            <p> Python</p>
+        </aside>
+            <article>
+                 <h3> About me</h3>
+                  <p> I like coding</p>
+            </article>
+            <article>
+                <h3>Recent proyect</h3>
+                <p> Learning about programation</p>
+            </article>
+
+        <footer>2026 my portfolio</footer>
+<script>
+    function ruben(){
+        document.getElementById("message").innerHTML = "Welcome to Rubén portfolio.";
+    }
+
+    function darkwhite(){
+        document.body.classList.toggle("dark");
+    }
+
+    function submitform(){
+        if(name == "")
+        alert("Please enter your name");
+        else
+        alert("Hello " + name);
+
+</script>
+
+
+</body>
+</html>
